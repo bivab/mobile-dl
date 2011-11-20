@@ -1,2 +1,2 @@
 cd $1
-curl $2 -silent -O -L &
+curl $2 --silent -O -L &
