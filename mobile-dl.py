@@ -63,7 +63,8 @@ while True:
                 sys.exit(2)
 
         if len(searchResults) == 1:
-                note = searchResults[0]
+                result = searchResults[0]
+                note = simplenoteApi.get_note(result['key'])
                 noteString = str(note['content'])
                 noteKey = note['key']
                 lines = str.split(noteString, "\n")
